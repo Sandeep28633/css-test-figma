@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "../../UIComponents/Box.component";
-import { Avatar, Button, Link, TextField, Typography } from "@mui/material";
-import KitchenOutlinedIcon from "@mui/icons-material/KitchenOutlined";
+import { Avatar, Button, Link, Typography } from "@mui/material";
+import TextFieldComponent from "../../UIComponents/TextField.component";
 
 const PersonalInfo = () => {
   return (
@@ -25,62 +25,22 @@ const PersonalInfo = () => {
       >
         <Box display="flex" flexDirection="column" gap="16px">
           <Box display="flex" gap="16px">
-            <TextField
-              label="First Name"
-              placeholder="Petter"
-              InputLabelProps={{ shrink: true }}
-              sx={{ flexGrow: 1 }}
-            />
-            <TextField
-              placeholder="Cetera"
-              label="Last Name"
-              InputLabelProps={{ shrink: true }}
-              sx={{ flexGrow: 1 }}
-            />
+            <TextFieldComponent label="First Name" placeholder="Petter" />
+            <TextFieldComponent placeholder="Cetera" label="Last Name" />
           </Box>
           <Box display="flex" gap="16px">
-            <TextField
-              label="City"
-              placeholder="London"
-              InputLabelProps={{ shrink: true }}
-              sx={{ flexGrow: 1 }}
-            />
-            <TextField
-              placeholder="E2 4XF"
-              label="Postal Code"
-              InputLabelProps={{ shrink: true }}
-              sx={{ flexGrow: 1 }}
-            />
+            <TextFieldComponent label="City" placeholder="London" />
+            <TextFieldComponent placeholder="E2 4XF" label="Postal Code" />
           </Box>
           <Box display="flex" gap="16px">
-            <TextField
-              label="Address"
-              placeholder="123 Example"
-              InputLabelProps={{ shrink: true }}
-              sx={{ flexGrow: 1 }}
-            />
+            <TextFieldComponent label="Address" placeholder="123 Example" />
           </Box>
           <Box display="flex" gap="16px">
-            <TextField
-              label="Email"
-              placeholder="petter@gmail.com"
-              InputLabelProps={{ shrink: true }}
-              sx={{ flexGrow: 1 }}
-            />
-            <TextField
-              placeholder="+442223334444"
-              label="Phone"
-              InputLabelProps={{ shrink: true }}
-              sx={{ flexGrow: 1 }}
-            />
+            <TextFieldComponent label="Email" placeholder="petter@gmail.com" />
+            <TextFieldComponent placeholder="+442223334444" label="Phone" />
           </Box>
           <Box display="flex" gap="16px">
-            <TextField
-              label="Password"
-              placeholder="password"
-              InputLabelProps={{ shrink: true }}
-              sx={{ flexGrow: 1 }}
-            />
+            <TextFieldComponent label="Password" placeholder="password" />
           </Box>
           <Box display="flex" alignItems="flex-start">
             <Typography sx={{ fontSize: "15px", color: "#14141F" }}>
